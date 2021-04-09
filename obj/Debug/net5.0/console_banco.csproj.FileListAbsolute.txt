@@ -1,0 +1,16 @@
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\obj\Debug\net5.0\console_banco.csprojAssemblyReference.cache
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\obj\Debug\net5.0\console_banco.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\obj\Debug\net5.0\console_banco.AssemblyInfoInputs.cache
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\obj\Debug\net5.0\console_banco.AssemblyInfo.cs
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\obj\Debug\net5.0\console_banco.csproj.CoreCompileInputs.cache
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\bin\Debug\net5.0\console_banco.exe
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\bin\Debug\net5.0\console_banco.deps.json
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\bin\Debug\net5.0\console_banco.runtimeconfig.json
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\bin\Debug\net5.0\console_banco.runtimeconfig.dev.json
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\bin\Debug\net5.0\console_banco.dll
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\bin\Debug\net5.0\ref\console_banco.dll
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\bin\Debug\net5.0\console_banco.pdb
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\obj\Debug\net5.0\console_banco.dll
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\obj\Debug\net5.0\ref\console_banco.dll
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\obj\Debug\net5.0\console_banco.pdb
+C:\Users\Adriano\Documents\BOOTCAMPGFT\BOOTSTART\.NET+C#\console_banco\obj\Debug\net5.0\console_banco.genruntimeconfig.cache
