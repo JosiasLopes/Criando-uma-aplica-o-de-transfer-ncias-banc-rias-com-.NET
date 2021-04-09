@@ -1,3 +1,5 @@
+
+using System;
 namespace console_banco {
     public class Conta {
 
@@ -23,6 +25,26 @@ namespace console_banco {
         }
 
         public override string ToString() => "nome: "+this.nome+" tipo de conta: "+this.tipoconta+"saldo: "+this.saldo+" credido: "+this.credito;
+
+        public void Sacar(double valor){
+            if(this.saldo>0){
+                this.saldo -= valor;
+                Console.WriteLine("Foi sacado o valor de: "+valor);
+                Console.WriteLine(this.nome+" seu saldo atual e: "+this.saldo);
+            }else{
+                Console.WriteLine("Nao foi possivel sacar o valor de: "+valor); 
+            }
+        }
+
+        public void Depositar(double valor){
+             if(valor>0){
+                this.saldo += valor;
+                Console.WriteLine("Foi depositado o valor de: "+valor);
+                Console.WriteLine(this.nome+" seu saldo atual e: "+this.saldo);
+            }else{
+                Console.WriteLine("Nao foi possivel depositar o valor de: "+valor); 
+            }
+        }
 
     }
 
