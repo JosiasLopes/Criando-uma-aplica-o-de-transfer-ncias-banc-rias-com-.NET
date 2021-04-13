@@ -8,7 +8,15 @@ namespace console_banco
     {
         static List<Conta> listaConta = new List<Conta>();
 
+        /*
+        O método Criar conta é responsável por coletar os dados do console
+        e alocar esses dados em um nova objeto Conta e adiciona-lo na Lista de Contas
+        
+        
+        */
+
         static void CriarConta(){
+            int numero = 0;
             Console.WriteLine("Digite um nome par o titular da conta");
             var nome = Console.ReadLine();
             Console.WriteLine("Digite um Tipo de Conta 1 para Pessoa Fisica 2 para Pessoa Jurídica");
@@ -20,7 +28,15 @@ namespace console_banco
               tipoConta = TipoConta.PessoaJuridica;  
             }
             Console.WriteLine("Digite um numero de Conta");
-            int numero = Int32.Parse(Console.ReadLine());
+            try{
+                numero = Int32.Parse(Console.ReadLine());
+            }catch(FormatException){
+                 Console.WriteLine("São permidos somente numeros inteiros não negativos");
+            }
+            
+
+            //caso a pesquisa retorne null quer dizer que não existe essa conta
+            //então podemos adiciona-la na lista caso contrario não sera adicionada nenhuma conta 
             if(pesquisaConta(numero)==null){
                 Console.WriteLine("Digite um valor para saldo inicial");
             float saldo = float.Parse(Console.ReadLine());
@@ -33,6 +49,13 @@ namespace console_banco
         
             
         }
+
+         /*
+        O método Transferir pesquisa 
+        as contas existentes na lista de contas, e atraves da entrada do usuario
+        coleta os dados para que sejam efetuadas as transferencias
+        
+        */
         static void Transferir(){
             int numero = 0;
             int numero2 = 0;
@@ -96,6 +119,26 @@ namespace console_banco
           
         }
 
+        static void Depositar(){
+            try{
+
+            Console.WriteLine("Digite o numero da conta");
+            int numero = Int32.Parse(Console.ReadLine());
+            Conta conta = pesquisaConta(numero);
+                try{
+                    Console.WriteLine("Digite o valor a ser depositado");
+                    float saldo = float.Parse(Console.ReadLine());
+                    conta.Depositar(saldo);
+                }catch(FormatException){
+                    Console.WriteLine("São permitidos apenas numeros");
+                }
+
+            }catch(NullReferenceException){
+                Console.WriteLine("Conta não encontrada");
+            }
+          
+        }
+
         private static string ObterUsuario(){
             Console.WriteLine();
             Console.WriteLine("1 - Listar Contas");
@@ -128,6 +171,7 @@ namespace console_banco
                     Sacar();
                         break;
                     case "5":
+                    Depositar();
                         break;
                     case "C":
                         Console.Clear();
@@ -145,19 +189,7 @@ namespace console_banco
         }   
         static void Main(string[] args)
         {
-           // Console.WriteLine("Hello World!");
-           // var key = Console.ReadLine();
-           // Console.WriteLine(key);
            
-           Conta conta = new Conta(TipoConta.PessoaFisica,"Carlos",10,10,0);
-           Conta conta2 = new Conta(TipoConta.PessoaFisica,"João",11,10,0);
-           conta.setNome("Carlos");
-           Console.WriteLine(conta.ToString());
-          // conta.Sacar(4);
-          // conta.Depositar(0);
-           conta.Transferir(3,conta2);
-           Console.WriteLine(conta.ToString());
-           Console.WriteLine(conta2.ToString());
            Escolher();
 
          
